@@ -1,36 +1,40 @@
 function executarPush() {
   const array = ['🍎', '🍌'];
+  array.push("🍇")
   const resultado = array;
   document.getElementById('resultado-push').textContent = resultado;
 }
 
 function executarPop() {
   const array = ['🍎', '🍌', '🍇'];
+  array.pop(); /*remove o ultimo elemento*/
   const resultado = array;
   document.getElementById('resultado-pop').textContent = resultado;
 }
 
 function executarShift() {
   const array = ['🍎', '🍌', '🍇'];
+  array.shift(); /*remove o primeiro elemento da array*/
   const resultado = array;
   document.getElementById('resultado-shift').textContent = resultado;
 }
 
 function executarUnshift() {
   const array = ['🍌', '🍇'];
-  const resultado = 'Resultado da operação unshift';
+  array.unshift("🍎"); //adiciona no incio do array//
+  const resultado = array;
   document.getElementById('resultado-unshift').textContent = resultado;
 }
 
 function executarIncludes() {
   const array =  ['🍎', '🍌', '🍇'];
-  const resultado = array;
+  const resultado = array.includes("🥝")
   document.getElementById('resultado-includes').textContent = resultado;
 }
 
 function executarReverse() {
   const array = ['🍎', '🍌', '🍇'];
-  const resultado = array;
+  const resultado = array.reverse();
   document.getElementById('resultado-reverse').textContent = resultado;
 }
 
@@ -38,9 +42,13 @@ function executarSort() {
   const array = [3, 1, 4, 2];
   const array2 = ["Brasil", "Argentina", "Noruega", "Italia"];
 
-  const resultado = array;
+  const resultado = array.sort(function(a, b){
+    return a - b;
+
+
+  });
   document.getElementById('resultado-sort').textContent = resultado;
-  const resultado2 = array2;
+  const resultado2 = array2.sort();
   document.getElementById('resultado-sort2').textContent = resultado2;
 }
 
