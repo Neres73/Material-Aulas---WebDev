@@ -54,26 +54,26 @@ function executarSort() {
 
 function executarSlice() {
   const array = ['🍎', '🍌', '🍇', '🍓'];
-  const resultado = array;
+  const resultado = array.slice(1, 3)
   document.getElementById('resultado-slice').textContent = resultado;
 }
 
 function executarSplice() {
   const array = ['🍎', '🍌', '🍇'];
-  const resultado = array;
+  const resultado = array.splice (1,1);
   document.getElementById('resultado-splice').textContent = resultado;
 }
 
 
 function executarIndexOf() {
   const array = ['🍎', '🍌', '🍇'];
-  const resultado = array;
+  const resultado = array.indexOf("🍇")
   document.getElementById('resultado-indexof').textContent = resultado;
 }
 
 function executarJoin() {
   const array = ['🍎', '🍌', '🍇'];
-  const resultado = array;
+  const resultado = array.join("---")
   document.getElementById('resultado-join').textContent = resultado;
 }
 
@@ -82,6 +82,7 @@ function executarJoin() {
 function executarForEach() {
   const array = ['🍎', '🍌', '🍇'];
   const resultado = 'Resultado da operação forEach';
+  
   document.getElementById('resultado-foreach').textContent = resultado;
 }
 
